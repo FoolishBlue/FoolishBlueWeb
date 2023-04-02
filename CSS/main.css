@@ -244,13 +244,18 @@ body {
   left: 34.375em; /* Adjust the left property */
   transform: translateX(-50%);
   margin-top: 1em;
-  animation: slide-in 1s forwards;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @keyframes slide-in {
   to {
       transform: translateX(0);
   }
+}
+}
+.DevText.show {
+  opacity: 1;
 }
 
 .FoolishText2 {
@@ -260,7 +265,7 @@ body {
   color: white;
   line-height: 1;
 }
-}
+
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width : 321px) {
