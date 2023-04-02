@@ -1,37 +1,62 @@
-ul {
-    list-style-type: none;
-    margin: -8px;
-    padding: 5px;
-    overflow: hidden;
-    top:0;
-    width: 100%;
-  }
-  
-  li a {
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  nav ul {
     display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    float: right;
-    font-weight:700;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em 1.875em;
-    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  li a:hover {
-    background-color: rgb(60, 63, 66);
-    
-  }
-
-
   
-.FoolishText {
-    float:left;
-    transform: translateX(-100%);
-    animation: slide-in 1.5s forwards;
+  nav li {
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .FoolishText {
+    display: none;
+  }
 }
 
-@keyframes slide-in {
-    to {
-        transform: translateX(0);
-    }
+/* Styles for screens larger than 600px */
+@media only screen and (min-width: 601px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .FoolishText {
+    display: inline-block;
+  }
 }
