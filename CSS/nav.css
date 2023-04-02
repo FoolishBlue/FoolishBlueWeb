@@ -79,14 +79,10 @@ li a:hover {
 @media only screen
 and (min-width : 321px) {
 /* Styles */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
 ul {
   list-style-type: none;
-  margin: -0.5em;
-  padding: 0.3125em;
+  margin: -8px;
+  padding: 5px;
   overflow: hidden;
   top:0;
   width: 100%;
@@ -106,7 +102,6 @@ li a:hover {
   background-color: rgb(60, 63, 66);
   
 }
-
 
 
 
@@ -443,4 +438,3 @@ li a:hover {
     }
 }
 
-}
