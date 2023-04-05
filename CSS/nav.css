@@ -106,17 +106,9 @@ li a:hover {
 
 
 .FoolishText {
-  float:left;
-  transform: translateX(-100%);
-  animation: slide-in 1.5s forwards;
-}
 
-@keyframes slide-in {
-  to {
-      transform: translateX(0);
-  }
+display:none;
 }
-
 }
 /* Smartphones (portrait) ----------- */
 @media only screen
