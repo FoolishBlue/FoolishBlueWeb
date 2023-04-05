@@ -418,9 +418,3 @@ li a:hover {
 
 }
 
-@keyframes slide-in {
-    to {
-        transform: translateX(0);
-    }
-}
-
